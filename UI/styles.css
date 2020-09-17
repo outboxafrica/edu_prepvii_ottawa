@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #edcfa9;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+h1{
+  font-weight: normal;  
+}
+.user{
+    border-radius: 20px;
+    height: 1.5rem;
+    width: 3rem;
+    align-items: center;
+    background-color: white;
+}
+.search{
+    border-radius: 20px;
+    height: 1.5rem;
+    padding-left: 1rem;
+    background-color: white;
+    
+} 
+.search::placeholder{
+    font: italic;
+    font-size: 0.7rem;
+}
+.search_button{
+    border-radius: 20px;
+    color: white;
+    background-color: black;
+}
+.cart_button{
+    background-color: orange;
+}
