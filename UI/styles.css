@@ -81,8 +81,28 @@ h2{
     border-radius: 20px;
     width:60%;
     height: 12rem;
+    padding-left: 10px;
     background-color:white;   
 } 
+.edit_info{
+    border-radius: 10px;
+    border-style: none;
+height: 2rem;
+width: 8rem;
+outline: none;
+
+    background-color: orange;
+    color:white;
+}
+.info_text{
+    padding-left: 30%;
+    padding-right: 30%;
+}
+input{
+    border: none;
+    outline: none;
+    background-color: #f3f3f3;
+}
 .delivery{
     border-radius: 20px;
     width: 20%;
