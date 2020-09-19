@@ -33,9 +33,16 @@ h1{
 }
 .search_button{
     border-radius: 20px;
+    border-style: none;
     color: white;
     background-color: black;
 }
 .cart_button{
     background-color: orange;
 }
+.contact{
+    background-color: orange; 
+} 
+.info_part{
+    
+} 
