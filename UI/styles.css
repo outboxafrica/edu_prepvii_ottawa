@@ -72,8 +72,8 @@ h2{
     font-weight: normal;
 }
 .wrapper{
-    display:flex;
-    justify-content: space-around;
+   /* display:flex;
+    justify-content: space-around;*/
     margin:20px;
     height: 100%;
 }
@@ -91,6 +91,10 @@ h2{
     border-radius: 20px;
     width:60%;
     background-color:white; 
+}
+.product_image{
+    height: 7rem;
+    width: 8rem;
 }
 .payment_section{
     border-radius: 20px;
