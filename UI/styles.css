@@ -54,6 +54,8 @@ h2{
 .wrapper{
     display:flex;
     justify-content: space-around;
+    margin:20px;
+    height: 100%;;
 }
 .info_part{
     border-radius: 20px;
@@ -76,11 +78,36 @@ h2{
     background-color:white; 
 }
 footer{
-    background-color: grey;
+    background-color: rgb(34, 33, 33);
 }
 .footer{
+display: flex;
+align-items: center;
 
 }
+.footer > ul{
+    list-style-type: none;
+    margin-right: 29%;
+    margin-left:0;
+    padding-left: 1%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: white;
+}
 .copyright{
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
    background-color: black; 
+}
+.footer_image{
+    width:3rem;
+    height: 1.7rem;
+    border-radius: 20px;
+    
+}
+.copyright_text{
+    font: 0.5rem;
+    color: white;
 }
