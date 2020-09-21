@@ -1,0 +1,21 @@
+/* SEARCH BOX */
+.search{width: 300px;
+        height: 30px;
+        top: 29px;
+        left: 556px;
+        border-radius: 25px;
+        color: #FFFF;
+        padding: 1ch;
+        margin: 0ch;
+}
+
+/* SEARCH BOTTON */
+.button{background: black;
+        border-radius: 25px;
+        width: 100px;
+        height: 47px;
+}
+p {color: white;
+   font-family: sans-serif;
+   padding: 0ch;
+}
