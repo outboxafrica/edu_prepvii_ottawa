@@ -1,9 +1,10 @@
 *{
     box-sizing: border-box;
     margin: 0;
+
 }
 
-[class*="col-"] {
+[div*] {
     float: left;
     padding: 15px;
   }
@@ -29,17 +30,21 @@
   }*/
 
 body{
-    background-color: #edcfa9;
+    background-color:  #E5DAD0;
 }
 .navbar{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
+    
 }
 h1{
   font-weight: normal; 
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 0.7rem;
+  background-color: #6a6b6d;
+  color: white;
 }
 .user{
     border-radius: 20px;
@@ -81,9 +86,14 @@ h1{
     padding-top: 0.4rem;
     padding-right: 0.2rem;
     padding-left: 0.2rem;
+    outline: none;
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
-    background-color: orange;
+    background-color: rgba(255, 255, 255, 0.3);
     color: white;
+}
+.cart_image{
+    width: 1.5rem;
+    height: 1rem;
 }
 .contact{
     border-radius: 10px;
@@ -92,9 +102,21 @@ h1{
     padding-right: 0.2rem;
     padding-left: 0.2rem;
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
-    background-color: orange; 
+    background-color: rgba(255, 255, 255, 0.3); 
     color: white;
+}
+a:link{
+    text-decoration: none;
+}
+button:hover{
+    background-color:#FFA361;
 } 
+.cart_button:hover{
+    background-color: #FFA361;
+} 
+.contact:hover{
+    background-color: #FFA361;
+}     
 h2{
     font-weight: bold;
     font-size: 1rem;
@@ -127,7 +149,7 @@ margin-top: 8%;
 margin-bottom: 4rem;
 outline: none;
 
-    background-color: orange;
+    background-color: #6a6b6d;
     color:white;
 }
 .info_text{
@@ -187,14 +209,17 @@ input{
 .payment_text{
     margin-bottom: 1rem;
 }
-.pay_para{
+#COD{
     margin-bottom: 2rem;
+}
+#Mobile-money{
+    margin-bottom: 2rem;   
 }
 .confirm_button{
     border-radius: 10px;
     border-style: none;
     height: 2rem;
-    background-color: orange;
+    background-color:  #6a6b6d;
 }
 footer{
     background-color: rgb(34, 33, 33);

@@ -9,30 +9,35 @@
   <body>
      <div class="navbar">
          <h1 class="navbar_text">OTTAWA STORES</h1>
-         <div class="user">User</div>
+        <!-- <div class="user">User</div>-->
          <form id="search-product">
             <input type="text" class="search" placeholder="Search store...">
             <button class="search_button">Search</button>
          </form>
-         
-         <p class="cart_button">
-             <img src="" alt="Oops!" class="cart_image">
-             Cart
-         </p>
-         <p class="contact">
-             Contact Us
-         </p>
+         <a href="#####" target="_blank">
+            <p class="cart_button">
+                <img src="images/cart.png" alt="Oops!" class="cart_image">
+               
+                Cart
+            </p>
+         </a>
+        <a href="#####" target="_blank">
+            <p class="contact">
+                Contact Us
+            </p>
+        </a>
+        
      </div>
      <div class="wrapper">
          <div class="info_part">
              <h2 class="info_text">
                  Adress Information
              </h2>
-             <form action="OnClick" class="input">
-                 <p> <label for="">Name:<input type="text" class="name"></label></p>
-                 <p> <label for="">Location: <input type="text" class="location"></label></p>
-                <p><label for="">Phone No:<input type="tel" class="phone_no"></label></p>
-                 <p> <label for="">Email: <input type="email" class="email"></label></p>
+             <form class="input">
+                 <p> <label for="">Name:<input type="text" class="name" required></label></p>
+                 <p> <label for="">Location: <input type="text" class="location" required></label></p>
+                <p><label for="">Phone No:<input type="tel" class="phone_no" required></label></p>
+                 <p> <label for="">Email: <input type="email" class="email" required></label></p>
                 
                 
                  
@@ -46,12 +51,13 @@
          <div class="delivery">
              <h2 class="delivery_text">Delivery Method</h2>
              <form>
-                 <p><input type="radio" name="location" id="location" value="pick up location">
-                    <label for="pick up location"><span></span>Pick up location</label></p>
-                    
-<p> <input type="radio" name="" id="particular_location" value="deliver at particular location">
-    <label for="deliver at particular location"><span></span>Deliver at particular location</label></p>
-                   
+               
+    <input type="radio" id="location" name="location" value="pick-up-location">
+    <label for="pick-up-location">Pick up location</label><br>
+    <input type="radio" id="deliver" name="location" value="deliver">
+    <label for="deliver">Deliver at particular location</label><br>
+   
+
              </form>
 
          </div>
@@ -66,22 +72,25 @@
                  Products from Generic
              </p>
              <h2>Total</h2>
-             <p class="amount">UGX 2564</p>
+             <p class="amount"><a href="#####"></a></p>
          </div>
          <div class="payment_section">
              <h2 class="payment_text">Payment Method</h2>
 <form>
-    <p class="pay_para"><label for="Cash On Delivery"><input type="radio" name="" id=""><span></span>Cash On Delivery</label>
-    </p>
-    <p class="pay_para"> <label for="Mobile money"><input type="radio" name="" id=""><span></span>Mobile money</label>
-    </p>
-    
-    
+
+    <input type="radio" id="COD" name="payment" value="Cash-on-delivery">
+    <label for="Cash-on-delivery">Cash on delivery</label><br>
+    <input type="radio" id="Mobile-money" name="payment" value="Mobile-money">
+    <label for="Mobile-money">Mobile money</label><br>
+    <button type="onclick" class="confirm_button" onclick="myFunc()">Confirm</button>
    
-    <button type="submit" class="confirm_button">Confirm</button>
+
+  
+
 </form>
          </div>
      </div>
+     
      <footer>
          <div class="footer">
                    <ul>
