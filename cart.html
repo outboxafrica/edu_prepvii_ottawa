@@ -1,227 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Cart-Ottawa Stores</title>
-<style>
-    *{
-        margin: 0;
-        padding:0;
-    }
-    body{
-        background-color: #e5dad0;
-    }
 
-    #cart_img{
-        position: fixed;
-        top: 10px;
-        left: 0;
-        border: none;
-        border-radius: 12px;
-        width: 50px;
-        padding: 5px;
-        margin: 5px;
-    }
+    <link rel="stylesheet" href="cart.css" />
+  </head>
+  <body>
+    <!-- nav-bar section -->
+    <header>
+      <h2>
+        <span class="brand-logo">Ottawa store</span>
+      </h2>
+      <div class="main-menu">
+        <form action="#" class="search">
+          <input type="search" placeholder="search store..." />
+        </form>
+      </div>
 
-    .cont{
-        display: flex;
-        flex-direction: column;
-        margin: 20px;
-        text-align: center;
-        padding: 5px;
-    }
-table{
-    border-spacing: 0;
-}
+      <div id="nv">
+        <a href="#" class="">
+          <span id="cart_num">1</span>
+          <input
+            type="image"
+            src="images/cart.png"
+            alt="cart_img"
+            id="cart_img"
+          />
+        </a>
+      </div>
+      <div id="h-link">
+        <a href="#">Contact us</a>
+        <a href="#">Log out</a>
+      </div>
+    </header>
+    <!-- end of nav-bar section -->
 
-td{
-    padding: 15px;
-}
-.pdt_img{
-    border-radius: 15px;
-}
-    button, #chek{
-        padding: 10px;
-        margin: 5px;
-        border: none;
-        border-radius: 10px;
-        background-color: #ffa361;
-        color: white;
-        font-weight: bold;
-        box-shadow: 0px 2px 2px 0px rgb(192, 190, 190);
-
-    }
-
-a{
-    text-decoration: none;
-    color: #ffa361;
-    font-weight: bold;
-}
-
-nav{
-    position: relative;
-    top: 20px;
-    
-}
-
-.pdt_row,.linky{
-    background-color: rgba(255, 255, 255, 0.726);
-    box-shadow: 0px 2px 2px 0 rgba(128, 128, 128, 0.788);
-}
-
-.title, #tot{
-    font-weight: bold;
-}
-</style>
-</head>
-<body>
-    <nav>
-        <input type="image" src="images/cart.png" alt="cart_img" id="cart_img" />
-       
-    </nav>
     <div class="cont">
-        <table>
-            <tr class="title">
-                <td>Product</td>
-                <td>Product Name</td>
-                <td>Quantity</td>
-                <td>Price</td>
-                <td>Amount</td>
-</tr>
+      <table id="tab">
+        <tr class="title">
+          <td>Product</td>
+          <td>Product Name</td>
+          <td>Quantity</td>
+          <td>Price</td>
+          <td>Amount</td>
+        </tr>
+        <!-- row with product details -->
         <tr class="pdt_row">
-            <td ><img src="images/camera.jpg" alt="product_img" width="100px" class="pdt_img" />
-                <button class="rem_but" onclick="remov()">REMOVE</button>
-                </td>
-                <td>
-        Product Info,details</td>
-        <td>
-        <input type="image" src="images/minus.png" width="15px" class="minus" onclick="minus()"/>
-        <span class="qty">1</span>
-        <input type="image" src="images/plus.png" alt="" width="15px" class="plus"  onclick="plus()"/>
-    </td>
-        <td>UGX<span class="price">
-        250000</span></td>
-        <td>UGX <span class="amount">250000</span></td>
-</tr>
-    <tr class="pdt_row">
-        <td><img src="images/camera.jpg" alt="product_img" width="100px" class="pdt_img" />
-            <button class="rem_but" onclick="remov()">REMOVE</button>
-            </td>
-            <td>
-    Product Info,details</td>
-    <td>
-    <input type="image" src="images/minus.png" width="15px" class="minus" onclick="minus()" alt="minus"/>
-    <span class="qty">1</span>
-    <input type="image" src="images/plus.png" alt="plus" width="15px" class="plus" onclick="plus()"/>
-</td>
-    <td>UGX<span class="price">
-    260000
-</span></td>
-    <td>UGX <span class="amount">260000</span></td>
-</tr> 
+          <td>
+            <img
+              src="images/camera.jpg"
+              alt="product_img"
+              width="100px"
+              class="pdt_img"
+            />
+            <button class="rem_but" name="rem_but" onclick="remov(this)">
+              REMOVE
+            </button>
+          </td>
+          <td>Product Info,details</td>
+          <td>
+            <input
+              type="image"
+              src="images/minus.png"
+              width="15px"
+              class="minus"
+              onclick="minus()"
+            />
+            <span class="qty">1</span>
+            <input
+              type="image"
+              src="images/plus.png"
+              alt=""
+              width="15px"
+              class="plus"
+              onclick="plus()"
+            />
+          </td>
+          <td>UGX<span class="price"> 250000</span></td>
+          <td>UGX <span class="amount">250000</span></td>
+        </tr>
+        <!--  another row with product details -->
+        <tr class="pdt_row">
+          <td>
+            <img
+              src="images/camera.jpg"
+              alt="product_img"
+              width="100px"
+              class="pdt_img"
+            />
+            <button class="rem_but" name="rem_but" onclick="remov(this)">
+              REMOVE
+            </button>
+          </td>
+          <td>Product Info,details</td>
+          <td>
+            <input
+              type="image"
+              src="images/minus.png"
+              width="15px"
+              class="minus"
+              onclick="minus()"
+              alt="minus"
+            />
+            <span class="qty">1</span>
+            <input
+              type="image"
+              src="images/plus.png"
+              alt="plus"
+              width="15px"
+              class="plus"
+              onclick="plus()"
+            />
+          </td>
+          <td>UGX<span class="price"> 260000 </span></td>
+          <td>UGX <span class="amount">260000</span></td>
+        </tr>
 
-    <tr> 
-        <td colspan="5" id="tot">Total:
-    UGX 
-    <span id="ttot">250000</span></td>
-    </tr>
+        <tr>
+          <td colspan="5" id="tot">Total: UGX <span id="ttot">250000</span></td>
+        </tr>
 
-    <tr class="linky">
-        <td colspan="3"><a href="home.html">Shop More Products</a></td>
-        <td colspan="5">
-        <a href="checkout.html" id="chek">CHECKOUT</a>
-        </td>
-    </tr>
-        </table>
-
+        <tr class="linky">
+          <td colspan="3"><a href="home.html">Shop More Products</a></td>
+          <td colspan="5">
+            <a href="checkout.html" id="chek">CHECKOUT</a>
+          </td>
+        </tr>
+      </table>
     </div>
 
-    <script>
+    <footer>
+      <div class="footer-menu">
+        <div class="menu-card">
+          <a href="">Home</a>
+          <a href="">About</a>
+          <a href="">Contact</a>
+        </div>
+        <div class="menu-card-social-media">
+          <a href="">Twitter</a>
+          <a href="">Facebook</a>
+          <a href="">Instagram</a>
+        </div>
+      </div>
+    </footer>
+    <footer class="footer-2">
+      <div>
+        <p>copyright ottawa-oubox 2020</p>
+      </div>
+    </footer>
 
-
-        let mins = [...document.querySelectorAll(".minus")]; //minus 
-
-        let plu = [...document.querySelectorAll(".plus")]; //plus
-
-        let qtys = [...document.querySelectorAll(".qty")] //quantities
-
-        let prices = document.querySelectorAll(".price"); //prices
-        
-        let amt = document.querySelectorAll(".amount"); //amount
-
-        let tot = document.querySelector("#ttot"); // total
-
-
-        let roo = document.querySelector(".pdt_row");
-
-        
-
-        let div_len = roo.length;
-        // calculations
-
-        let totarr = [];
-
-        for (let it = 0; it < div_len; it++) {
-        
-        let qty1 = parseInt(qtys[it].innerHTML);
-        let prices1 = parseInt(prices[it].innerHTML);
-        let amt1 = parseInt(amt[it].innerHTML);
-
-        // amt1+=amt1
-        //     console.log(amt1);
-        
-  
-      minus = function () {
-        let count = 0;
-        if (true) {
-          count++;
-          qty1 -= count;
-          amt1 = qty1*prices1;
-        }
-        qtys[it].textContent = qty1;
-        amt[it].textContent = amt1;
-        tot.textContent = parseInt(amt1+tot);
-        
-        // return 
-        console.log(qty1 + " " + prices1 + " " + amt1);
-      };
-
-      plus = function () {
-        let count = 0;
-        if (true) {
-          count++;
-          qty1 += count;
-          amt1 = qty1*prices1;
-        }
-        qtys[it].textContent = qty1;
-        amt[it].textContent = amt1;
-        tot.textContent = parseInt(amt1+tot);
-        // return 
-        console.log(qty1 + " " + prices1 + " " + amt1);
-      }; 
-
-        }
-
-      //remove buttons
-        // removing an item from the cart
-
-function remov(){
-    let roo = document.querySelector(".pdt_row");
-    let pdt = document.querySelector(".pdt_row");
-    let remb = [...document.querySelectorAll(".rem_but")];
-          
-            if(remb.length==1){
-                    window.location = "home.html";
-                }
-                else{
-                    pdt.remove();
-                }
-return console.log(remb.length);;
-}
-
-
-    </script>
-</body>
+    <script src="cart.js"></script>
+  </body>
 </html>
