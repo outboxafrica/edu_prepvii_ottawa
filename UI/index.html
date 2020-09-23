@@ -7,6 +7,7 @@
 <link rel="stylesheet" type="text/css" href="styles.css" />
   </head>
   <body>
+      <!--navbar-->
      <div class="navbar">
          <h1 class="navbar_text">OTTAWA STORES</h1>
         <!-- <div class="user">User</div>-->
@@ -26,7 +27,7 @@
                 Contact Us
             </p>
         </a>
-        
+        <!--product information-->
      </div>
      <div class="wrapper">
          <div class="info_part">
@@ -34,17 +35,17 @@
                  Adress Information
              </h2>
              <form class="input">
-                 <p> <label for="">Name:<input type="text" class="name" required></label></p>
-                 <p> <label for="">Location: <input type="text" class="location" required></label></p>
-                <p><label for="">Phone No:<input type="tel" class="phone_no" required></label></p>
-                 <p> <label for="">Email: <input type="email" class="email" required></label></p>
+                 <p> <label for="">Name:<input type="text" class="name" name="name" id="name" required></label></p>
+                 <p> <label for="">Location: <input type="text" class="location" name="location"id="location" required></label></p>
+                <p><label for="">Phone No:<input type="tel" class="phone_no" name="phone-no" id="phone-no" required></label></p>
+                 <p> <label for="">Email: <input type="email" class="email" name="email" id="email" required></label></p>
                 
                 
                  
                  
                 
                 
-                 <button class="edit_info" type="reset">Edit Information</button>
+                 <button class="edit_info" type="button" onclick="myFunc()">Edit Information</button>
              </form>
             
          </div>
@@ -76,15 +77,15 @@
          </div>
          <div class="payment_section">
              <h2 class="payment_text">Payment Method</h2>
-<form>
+<form id="confirm">
 
     <input type="radio" id="COD" name="payment" value="Cash-on-delivery">
     <label for="Cash-on-delivery">Cash on delivery</label><br>
     <input type="radio" id="Mobile-money" name="payment" value="Mobile-money">
     <label for="Mobile-money">Mobile money</label><br>
-    <button type="onclick" class="confirm_button" onclick="myFunc()">Confirm</button>
+   <!-- <button type="submit" class="confirm_button" onclick="myFunc()">Confirm</button>-->
    
-
+<input type="submit" value="Confirm" class="confirm_button" target="_blank" onclick="showAlert()">
   
 
 </form>
