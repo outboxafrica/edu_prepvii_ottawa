@@ -25,7 +25,7 @@ var objPeople = [
         console.log(useremail + "is logged in!!!");
         alert("Welcome " + "" + "" + useremail);
         
-        window.open("home.html");
+        window.open("index.html");
         return;
       }
     }
