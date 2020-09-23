@@ -23,16 +23,21 @@ const forms = document.forms;
  };
 
 //Declaring input information
-var name = document.getElementById("name").value;
-var location = document.getElementById("location").value;
-var phone = document.getElementById("phone-no").value;
-var email = document.getElementById("email").value;
+let name = document.getElementById("name").value;
+let location = document.getElementById("location").value;
+let phone = document.getElementById("phone-no").value;
+let email = document.getElementById("email").value;
 
 // storage of input information
-localStorage.setItem("Name",name);
-localStorage.setItem("Location",location);
-localStorage.setItem("Phone",phone);
-localStorage.setItem("Email",email);
+
+let personDetails = {
+  "Name": name,
+  "Location": location,
+  "Phone": phone,
+  "Email": email
+
+}
+localStorage.setItem("pdetails",JSON.stringify(personDetails));
 
 // Retrieving stored information
 function myFunc(){
