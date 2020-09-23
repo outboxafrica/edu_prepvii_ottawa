@@ -7,26 +7,18 @@ body {
   background-color: #e5dad0;
 }
 
-
 /* header */
 #nv {
   top: 10px;
 }
 
-/* #h-link {
-  margin: 8px;
-  display: flex;
-  flex-direction: row;
-} */
 
 #cart_img {
   width: 30px;
 }
 
 #cart_num {
-  /* position: relative;
-  top: -10px;
-  left: 60px; */
+  
   font-size: 1rem;
   font-weight: bold;
   color: #ffa361;
@@ -54,7 +46,7 @@ td {
 .pdt_img {
   border-radius: 15px;
 }
-button,
+.rem_but,
 #chek {
   padding: 10px;
   margin: 5px;
