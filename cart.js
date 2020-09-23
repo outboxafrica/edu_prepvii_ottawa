@@ -75,14 +75,12 @@ let totarr = [],f_tot;
    function remov(btn) {
     var row = btn.parentNode.parentNode;
     row.parentNode.removeChild(row);
-    // console.log(row);
     
     pdts = [...document.querySelectorAll(".pdt_row")];
     let rowCount = pdts.length;
-    // console.log(rowCount);
     can.textContent = pdts.length;
     if (rowCount == 0) {
         window.location = "home.html";
       }
         }  
-      
+        
