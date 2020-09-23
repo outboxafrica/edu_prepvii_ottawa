@@ -82,7 +82,7 @@ let totarr = [],f_tot;
     // console.log(rowCount);
     can.textContent = pdts.length;
     if (rowCount == 0) {
-        window.location = "home.html";
+        window.location = "index.html";
       }
         }  
       

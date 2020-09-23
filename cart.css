@@ -16,7 +16,8 @@ body {
 header {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  
+  /* justify-content: center; */
   height: 80px;
   width: 100%;
   align-items: center;
@@ -46,19 +47,14 @@ header h2 {
   width: 30%;
 }
 
-#menu-change {
-  display: none;
-}
-
-/* .main-menu {
-  
-} */
-
-.main-menu a:hover {
-  background: rgb(255, 122, 74);
+#h-link a:hover {
+  background: white;
   padding: 0.5rem;
-  border-radius: 2px;
-  color: white;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 2px 2px 0px gray;
+  color: #ffa361;
+  /* color: rgb(255, 122, 74); */
 }
 
 form.search {
@@ -114,15 +110,18 @@ header a {
 }
 
 footer {
+  /* width: 100%; */
   padding: 1.5rem;
   color: white;
   background: rgb(61, 59, 59);
 }
 
 .footer-2 {
+  
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: end;
   background: black;
   padding: 0.4rem;
   position: relative;
@@ -167,10 +166,10 @@ footer {
   top: 10px;
 }
 
-#hlink {
+#h-link {
   margin: 8px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 #cart_img {
