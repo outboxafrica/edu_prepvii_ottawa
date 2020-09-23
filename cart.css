@@ -12,13 +12,11 @@ body {
   top: 10px;
 }
 
-
 #cart_img {
   width: 30px;
 }
 
 #cart_num {
-  
   font-size: 1rem;
   font-weight: bold;
   color: #ffa361;
@@ -72,6 +70,6 @@ a {
 
 .title,
 #tot {
-    color: #6a6b6d;
+  color: #6a6b6d;
   font-weight: bold;
 }
