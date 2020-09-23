@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Ottawa store | home page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" />
+    <link rel="stylesheet" href="contact.css" />
+  </head>
+  <body>
+    <!-- nav-bar section -->
+    <header>
+      <h2>
+        <span class="brand-logo">Ottawa store</span>
+        <!-- <label for="menu-change"><span class="ti-menu"></span></label> -->
+      </h2>
+      <input type="checkbox" id="menu-change" />
+      <div class="main-menu">
+        <div class="menu-responsive">
+          <label for="menu-change">Close</label>
+        </div>
+        <!-- <a href="" class="">cart</a> -->
+        <a href="home.html" class="contact">Home</a>
+        <a href="login.html">logout</a>
+        <link rel="stylesheet" href="contact.css" />
+      </div>
+    </header>
+    <!-- end of nav-bar section -->
+    <!-- contact section -->
+    <div class="wrapper">
+      <h2>Contact us</h2>
+      <div id="error_message"></div>
+      <form action="" id="myform" onsubmit="return validation()">
+        <div class="input_field">
+          <input type="email" placeholder="Email" id="email" />
+        </div>
+        <div class="input_field">
+          <input type="tel" placeholder="Phone number" id="number" />
+        </div>
+        <div class="input_field">
+          <textarea id="text-area" placeholder="Message"></textarea>
+        </div>
+        <div class="submit-btn">
+          <input type="submit" />
+        </div>
+      </form>
+    </div>
+    <!-- end of contact section -->
+    <!-- JavaScript -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/easytimer@1.1.1/src/easytimer.min.js"></script>
+    <script src="./contact.js"></script>
+  </body>
+</html>
