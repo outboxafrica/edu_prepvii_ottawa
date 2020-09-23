@@ -7,10 +7,12 @@
     <title>Cart-Ottawa Stores</title>
 
     <link rel="stylesheet" href="cart.css" />
+    <link rel="stylesheet" href="style.css" />
+
   </head>
   <body>
     <!-- nav-bar section -->
-    <header>
+    <!-- <header>
       <h2>
         <span class="brand-logo">Ottawa store</span>
       </h2>
@@ -35,8 +37,27 @@
         <a href="#">Contact us</a>
         <a href="#">Log out</a>
       </div>
+    </header> -->
+
+    <header>
+      <h2>
+        <span class="brand-logo">Ottawa store</span>
+        <label for="menu-change"><span class="ti-menu"></span></label>
+      </h2>
+      <input type="checkbox" id="menu-change" />
+      <div class="main-menu">
+        <div class="menu-responsive">
+          <label for="menu-change">Close</label>
+          <form action="" class="search">
+            <input type="search" placeholder="search store..." />
+            <button><span class="span ti-search"></span></button>
+          </form>
+        </div>
+        <a href="" class="">Cart</a>
+        <a href="">Contact us</a>
+        <a href="">Log out</a>
+      </div>
     </header>
-    <!-- end of nav-bar section -->
 
     <div class="cont">
       <table id="tab">
@@ -80,7 +101,7 @@
               onclick="plus(this)"
             />
           </td>
-          <td>UGX<span class="price"> 250000</span></td>
+          <td>UGX<span class="Price"> 250000</span></td>
           <td>UGX <span class="amount">250000</span></td>
         </tr>
         <!--  another row with product details -->
@@ -118,7 +139,7 @@
               onclick="plus(this)"
             />
           </td>
-          <td>UGX<span class="price"> 260000 </span></td>
+          <td>UGX<span class="Price"> 260000 </span></td>
           <td>UGX <span class="amount">260000</span></td>
         </tr>
 
@@ -135,7 +156,8 @@
       </table>
     </div>
 
-    <!-- <footer>
+   
+    <footer>
       <div class="footer-menu">
         <div class="menu-card">
           <a href="">Home</a>
@@ -143,18 +165,18 @@
           <a href="">Contact</a>
         </div>
         <div class="menu-card-social-media">
-          <a href="#">Twitter</a>
-          <a href="#">Facebook</a>
-          <a href="#">Instagram</a>
+          <a href="">Twitter</a>
+          <a href="">Facebook</a>
+          <a href="">Instagram</a>
         </div>
       </div>
     </footer>
     <footer class="footer-2">
-      <div>
+      <div class="brand">
         <p>copyright ottawa-oubox 2020</p>
       </div>
-    </footer> -->
-
+    </footer>
+    <!-- end of footer section -->
     <script src="cart.js"></script>
   </body>
 </html>
