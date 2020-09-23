@@ -19,7 +19,7 @@
   background:#e5dad0;
   border-radius: 25px;
   }
-  .info {
+  .inf {
     position: absolute;
     width: 547.2px;
     height: 168px;
@@ -235,9 +235,7 @@
     .right {
       display: none;
     }
-    .ed {
-        
-    }
+    
     
 .footer {
     padding: 3rem;

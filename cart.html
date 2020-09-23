@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Cart-Ottawa Stores</title>
+
+    <link rel="stylesheet" href="cart.css" />
+    <link rel="stylesheet" href="home.css" />
+  </head>
+  <body>
+    <header>
+      <h2>
+        <a href="home.html">
+        <span class="brand-logo">Ottawa store</span></a>
+        <label for="menu-change"><span class="ti-menu"></span></label>
+      </h2>
+      <input type="checkbox" id="menu-change" />
+      <div class="main-menu">
+        <div class="menu-responsive">
+          <label for="menu-change">Close</label>
+          <form action="" class="search">
+            <input type="search" placeholder="search store..." />
+            <button><span class="span ti-search"></span></button>
+          </form>
+        </div>
+        <a href="cart.html" class="">Cart<span id="cart_num"></span></a>
+        <a href="contact.html">Contact us</a>
+        <a href="index.html">Log out</a>
+      </div>
+    </header>
+
+    <div class="cont">
+      <table id="tab">
+        <tr class="title">
+          <td>Product</td>
+          <td>Product Info</td>
+          <td>Quantity</td>
+          <td>Price</td>
+          <td>Amount</td>
+        </tr>
+        <!-- row with product details -->
+        <tr class="pdt_row">
+          <td>
+            <img
+              src="images/camera.jpg"
+              alt="product_img"
+              width="100px"
+              class="pdt_img"
+            />
+            <button class="rem_but" name="rem_but" onclick="remov(this)">
+              REMOVE
+            </button>
+          </td>
+          <td>
+            <p>Camera L7840</p>
+            <p>Black</p>
+          </td>
+          <td>
+            <input
+              type="image"
+              src="images/minus.png"
+              width="15px"
+              class="minus"
+              onclick="minus(this)"
+            />
+            <span class="qty">1</span>
+            <input
+              type="image"
+              src="images/plus.png"
+              alt=""
+              width="15px"
+              class="plus"
+              onclick="plus(this)"
+            />
+          </td>
+          <td>UGX<span class="Price"> 250000</span></td>
+          <td>UGX <span class="amount">250000</span></td>
+        </tr>
+        <!--  another row with product details -->
+        <tr class="pdt_row">
+          <td>
+            <img
+              src="images/tripod.jpg"
+              alt="product_img"
+              width="100px"
+              class="pdt_img"
+            />
+            <button class="rem_but" name="rem_but" onclick="remov(this)">
+              REMOVE
+            </button>
+          </td>
+          <td>
+            <p>Camera Tripod/Stand</p>
+            <p>Black</p>
+          </td>
+          <td>
+            <input
+              type="image"
+              src="images/minus.png"
+              width="15px"
+              class="minus"
+              onclick="minus(this)"
+              alt="minus"
+            />
+            <span class="qty">1</span>
+            <input
+              type="image"
+              src="images/plus.png"
+              alt="plus"
+              width="15px"
+              class="plus"
+              onclick="plus(this)"
+            />
+          </td>
+          <td>UGX<span class="Price"> 260000 </span></td>
+          <td>UGX <span class="amount">260000</span></td>
+        </tr>
+
+        <tr>
+          <td colspan="5" id="tot">Total: UGX <span id="ttot">0</span></td>
+        </tr>
+
+        <tr class="linky">
+          <td colspan="3"><a href="index.html">Shop More Products</a></td>
+          <td colspan="5">
+            <a href="checkout.html" id="chek">CHECKOUT</a>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- footer section -->
+    <footer>
+      <div class="footer-menu">
+        <div class="menu-card">
+          <a href="home.html">Home</a>
+          <a href="">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="menu-card-social-media">
+          <a href="">Twitter</a>
+          <a href="">Facebook</a>
+          <a href="">Instagram</a>
+        </div>
+      </div>
+    </footer>
+    <footer class="footer-2">
+      <div class="brand">
+        <p>copyright ottawa-oubox 2020</p>
+      </div>
+    </footer>
+    <!-- end of footer section -->
+    <script src="cart.js"></script>
+  </body>
+</html>
