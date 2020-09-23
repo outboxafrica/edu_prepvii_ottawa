@@ -1,3 +1,4 @@
+// creating validation variables
 function validation() {
   var email = document.getElementById("email").value;
   var number = document.getElementById("number").value;
@@ -7,6 +8,7 @@ function validation() {
   var text;
   error_message.style.padding = "10px";
 
+  // user validation starts here
   if (email.indexOf("@") == -1 || email.length < 6 || email == "" || email == null) {
     text = "Please Enter valid Email";
     error_message.innerHTML = text;
@@ -27,5 +29,14 @@ function validation() {
     error_message.innerHTML = text;
     return false;
   }
+  if (validation() == true) {
+    let user = {
+      user_email: "email",
+      user_number: "number",
+      user_password: "password",
+    };
+    window.localStorage.setItem("person", JSON.stringify(user));
+  }
   window.open("home.html", "_self");
 }
+// validation ends here

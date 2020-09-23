@@ -191,6 +191,10 @@ input[type="password"]:hover {
   border-bottom: 0.1px solid black;
 }
 
+.login-link p, a{
+  display: inline-block;
+}
+
 @media only screen and (max-width: 1180px) {
   .menu-responsive {
     width: 60%;

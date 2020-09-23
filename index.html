@@ -17,7 +17,7 @@
     <header>
       <h2>
         <span class="brand-logo">Ottawa store</span>
-        <label for="menu-change"><span class="ti-menu"></span></label>
+        <!-- <label for="menu-change"><span class="ti-menu"></span></label> -->
       </h2>
       <input type="checkbox" id="menu-change" />
       <div class="main-menu">
@@ -25,8 +25,8 @@
           <label for="menu-change">Close</label>
         </div>
         <!-- <a href="" class="">cart</a> -->
-        <a href="#" class="contact">Contact</a>
-        <a href="#">login</a>
+        <a href="contact.html" class="contact">Contact</a>
+        <a href="login.html">login</a>
       </div>
     </header>
     <!-- end of nav-bar section -->
@@ -34,7 +34,7 @@
     <div class="sign-up-box">
       <h1 class="sign-up-name">Sign up</h1>
       <div id="error_message"></div>
-      <form id="my-form" onsubmit="return validation()" novalidate>
+      <form id="my-form" onsubmit="return validation()" novalidate action="home.html">
         <input type="email" name="email" placeholder="Email" id="email" />
         <input type="number" name="number" placeholder="Phone number" id="number" />
         <input type="password" name="password" placeholder="Password" id="password" />
@@ -47,7 +47,7 @@
         <div class="submit-btn">
           <input type="submit" name="" value="Register" class="submit" onclick="validation()" />
         </div>
-        <div class="login-link"><a href="#">Already have account?</a></div>
+        <div class="login-link"><p>Already have account?</p><a href="login.html">Login</a></div>
       </form>
     </div>
     <!-- end of sign up form -->
