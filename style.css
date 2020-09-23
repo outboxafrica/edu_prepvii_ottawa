@@ -51,10 +51,16 @@ header h2 {
   justify-content: space-between;
   align-items: center;
   width: 80%;
+  padding-bottom: 20px;
+  position: absolute;
+}
+
+.main-menu .contact {
+  margin-right: 20px;
 }
 
 .main-menu a:hover {
-  background: rgb(255, 122, 74);
+  background-color: rgb(255, 122, 74);
   padding: 0.5rem;
   border-radius: 2px;
   color: white;
@@ -72,652 +78,167 @@ header h2 {
   font-weight: 700;
 }
 
-form.search {
-  width: 70%;
-  background: #fff;
-  margin-left: 5rem;
-  border-radius: 7px;
-}
-
-form.search input,
-form.search button {
-  height: 45px;
-  outline: none;
-  background: none;
-  border: none;
-}
-
-form.search input {
-  width: 50%;
-  padding: 0rem 1rem;
-}
-
-form.search button {
-  width: 9%;
-  padding-left: 10rem;
-}
-
 header a {
   color: #6a6b6d;
   font-weight: 600;
 }
 
-.home {
-  height: 70vh;
-  margin-top: 1rem;
+/* sign up form */
+
+.sign-up-box {
+  width: 360px;
+  height: 420px;
+  color: #000;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 50px 50px;
+  border-radius: 10px;
+  border: transparent;
 }
 
-.home p {
-  font-family: "Montserrat", sans-serif;
+h1 {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 22px;
 }
 
-.home-item {
-  height: 100%;
-  width: 75%;
-  margin-right: 1rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-radius: 5px;
-  padding: 2rem 3rem;
+.brand-name {
+  margin-bottom: 30px;
 }
 
-.home-item img {
-  width: 100%;
-  height: auto;
+.sign-up-name {
+  margin-bottom: 25px;
 }
 
-.home-info {
+.sign-up-box input {
+  width: 110%;
+  margin-bottom: 20px;
+  border: transparent;
+}
+
+.sign-up-box input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"] {
+  border: transparent;
+  height: 50px;
+  color: black;
+  font-size: 16px;
+  border-radius: 7px;
+  padding-left: 15px;
+}
+
+.sign-up-box input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"]:hover {
+  border: transparent;
+}
+
+.sign-up-box input[type="submit"] {
+  border: none;
+  outline: none;
+  background: rgb(255, 122, 74);
+  color: white;
+  font-size: 20px;
+  border-radius: 7px;
+  height: 40px;
+  font-weight: 200px;
+}
+
+.sign-up-box input[type="submit"]:hover {
+  cursor: pointer;
+  background: rgb(240, 79, 21);
+}
+
+#error_message {
+  margin-bottom: 10px;
+  padding: px;
+  background: rgb(255, 122, 74);
+  text-align: center;
+  font-size: 14px;
+  transition: all 0.5s ease;
   color: #fff;
-  width: 60%;
-  padding: 0rem 2.5rem;
+  width: 110%;
+  border-radius: 5px;
 }
 
-.home-image {
-  width: 60%;
+.submit-btn {
+  padding: 0px 50px;
+  margin-left: 18px;
 }
 
-.home-item:first-child {
-  background: #767677;
+.login-link {
+  text-align: center;
+  justify-content: center;
+  margin-top: -10px;
+  padding: 0px 30px;
+  margin-left: 30px;
+  display: block;
 }
 
-.home-item:nth-child(2) {
-  background: #303133;
-}
-
-.home-item:nth-child(3) {
-  background: #1daadf;
-}
-
-.home-info h1 {
-  margin-bottom: 1rem;
+.login-link a {
+  color: #000;
+  font-size: 15px;
   font-weight: 600;
-  font-size: 2.5rem;
 }
 
-.home-info p {
-  line-height: 1.7rem;
-  margin-bottom: 2.5rem;
-}
-
-.home-info a {
-  background: #fff;
-  color: #6a6b6d;
-  padding: 1rem 1.3rem;
-  border-radius: 3px;
-}
-
-/* position outside */
-.home .flickity-prev-next-button.previous {
-  left: 210px;
-}
-
-.home .flickity-prev-next-button.next {
-  right: 210px;
-}
-
-.popular {
-  padding: 0rem 3.5rem;
-  margin-bottom: 5rem;
-}
-
-.popular h2 {
-  margin: 3rem 0rem;
-  color: #6a6b6d;
-}
-
-.single-item {
-  width: 20%;
-  margin-right: 1rem;
-  background: #fff;
-  border-radius: 5px;
-  color: #6a6b6d;
-}
-
-.single-item p {
-  font-family: "Montserrat", sans-serif;
-}
-
-.single-item .img {
-  height: 230px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.single-item .info {
-  padding: 1rem;
-}
-
-.single-item .info h3,
-.single-item .info p {
-  text-align: center;
-  margin-bottom: 1rem;
-}
-
-.item-flex {
-  display: flex;
-  justify-content: space-between;
-}
-
-.price h4 {
-  font-size: 1.3rem;
-  font-family: sans-serif;
-}
-
-.deals {
-  background: #090b24;
-  color: #fff;
-  padding: 3.5rem 3rem;
-}
-
-.deals-inner {
-  display: grid;
-  grid-template-columns: 22% 78%;
-  grid-gap: 0rem 2rem;
-}
-
-.timer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 0rem 2rem;
-  text-align: center;
-}
-
-.timer h1 {
-  font-size: 2.3rem;
-  margin-bottom: 1rem;
-}
-
-.timer h3 {
-  font-size: 1.9rem;
-}
-
-.deals-item .single-item {
-  width: 25% !important;
-}
-
-.deals-item .flickity-prev-next-button.previous {
-  left: -40px;
-}
-
-.deals-item .flickity-prev-next-button.next {
-  right: -10px;
-}
-
-.card-brand {
-  padding: 3rem;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 0rem 3rem;
-}
-
-.single-card {
-  height: 300px;
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  border-radius: 5px;
-  box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.3);
-}
-
-footer {
-  padding: 3rem;
-  display: grid;
-  grid-template-columns: 22% 78%;
-  grid-gap: 2rem;
-  color: white;
-  background: rgb(61, 59, 59);
-}
-
-.footer-2 {
-  background: black;
-  padding: 0.4rem;
-}
-
-.footer-menu {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 10rem;
-}
-
-.brand h1,
-p {
-  text-align: center;
-  align-content: center;
-  justify-content: center;
-}
-
-.brand h1 {
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-}
-
-.brand p {
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-}
-
-.menu-card-social-media {
-  padding: 1rem;
-  padding-left: 800px;
-}
-
-.menu-card-social-media h3 {
-  margin-bottom: 0.7rem;
-}
-
-.menu-card-social-media a {
-  padding: 0.5rem;
-  display: block;
-  color: white;
-  align-items: flex-end;
-  font-family: "Montserrat", sans-serif;
-}
-
-.menu-card {
-  padding: 1rem;
-}
-
-.menu-card h3 {
-  margin-bottom: 0.7rem;
-}
-
-.menu-card a {
-  display: block;
-  color: white;
-  padding: 0.5rem;
-  font-family: "Montserrat", sans-serif;
+.login-link a:hover {
+  border-bottom: 0.1px solid black;
 }
 
 @media only screen and (max-width: 1180px) {
   .menu-responsive {
     width: 60%;
   }
-  footer {
-    padding: 3rem;
-    display: grid;
-    grid-template-columns: 22% 78%;
-    grid-gap: 2rem;
-    color: white;
-    background: rgb(61, 59, 59);
-  }
-
-  .footer-2 {
-    background: black;
-    padding: 0.4rem;
-    font-size: 15px;
-  }
-
-  .footer-menu {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 10rem;
-  }
-
-  .brand {
-    text-align: center;
-    align-content: center;
-    justify-content: center;
-  }
-
-  .brand h1 {
-    text-align: center;
-    align-content: center;
-    justify-content: center;
-  }
-
-  .brand p {
-    text-align: center;
-    align-content: center;
-    justify-content: center;
-  }
-
-  .menu-card-social-media {
-    padding: 1rem;
-    padding-left: 550px;
-  }
-
-  .menu-card-social-media h3 {
-    margin-bottom: 0.7rem;
-  }
-
-  .menu-card-social-media a {
-    display: block;
-    color: white;
-    align-items: flex-end;
-  }
-
-  .menu-card {
-    padding: 1rem;
-  }
-
-  .menu-card h3 {
-    margin-bottom: 0.7rem;
-  }
-
-  .menu-card a {
-    display: block;
-    color: white;
-  }
-  .footer-menu {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 10rem;
-  }
 }
 
 @media only screen and (max-width: 980px) {
-  footer {
-    padding: 3rem;
-    display: grid;
-    grid-template-columns: 22% 78%;
-    grid-gap: 2rem;
-    color: white;
-    background: rgb(61, 59, 59);
-  }
-
-  .footer-2 {
-    background: black;
-    padding: 0.4rem;
-    font-size: 15px;
-  }
-
-  .footer-menu {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 10rem;
-  }
-
-  .brand h1,
-  p {
-    text-align: center;
-  }
-
-  .menu-card-social-media {
-    padding: 1rem;
-    padding-left: 350px;
-  }
-
-  .menu-card-social-media h3 {
-    margin-bottom: 0.7rem;
-  }
-
-  .menu-card-social-media a {
-    display: block;
-    color: white;
-    align-items: flex-end;
-  }
-
-  .menu-card {
-    padding: 1rem;
-  }
-
-  .menu-card h3 {
-    margin-bottom: 0.7rem;
-  }
-
-  .menu-card a {
-    display: block;
-    color: white;
-  }
   .brand-logo {
     display: none;
   }
-  .footer-menu {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 10rem;
-  }
-
-  #menu-change:checked ~ .main-menu:before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 500;
-    background: rgba(0, 0, 0, 0.6);
-  }
-
-  #menu-change:checked ~ .main-menu .menu-responsive {
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 600;
-  }
-
-  #menu-change:checked ~ .main-menu .menu-responsive label {
-    display: block;
-  }
-
-  .menu-responsive {
-    position: absolute;
-    top: -100%;
-  }
-
-  .main-menu {
-    justify-content: flex-end;
-  }
-
-  .main-menu a {
-    margin-left: 1rem;
-  }
-
-  .home {
-    height: auto;
-  }
-
-  .home-item {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-
-  .home-info {
-    width: 100%;
-  }
-
-  .home-image {
+  .ti-menu {
     display: none;
   }
-
-  .single-item {
-    width: 30%;
-  }
-
-  .deals-item .single-item {
-    width: 50% !important;
-  }
-
-  .deals-inner {
-    display: block;
-  }
-
-  .timer {
-    margin-bottom: 1rem;
-  }
-
-  footer {
-    display: block;
-  }
-
-  .footer-menu {
-    grid-template-columns: repeat(2, 1fr);
-  }
 }
 
-@media only screen and (max-width: 768px) {
-  footer {
-    padding: 3rem;
-    display: grid;
-    grid-template-columns: 22% 78%;
-    grid-gap: 2rem;
-    color: white;
-    background: rgb(61, 59, 59);
-  }
-
-  .footer-2 {
-    background: black;
-    padding: 0.4rem;
-    font-size: 15px;
-    display: block;
-  }
-
-  .footer-menu {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 10rem;
-  }
-
-  .brand h1,
-  p {
-    text-align: center;
-  }
-
-  .menu-card-social-media {
-    padding: 1rem;
-    padding-left: 170px;
-  }
-
-  .menu-card-social-media h3 {
-    margin-bottom: 0.7rem;
-  }
-
-  .menu-card-social-media a {
-    display: block;
-    color: white;
-    align-items: flex-end;
-  }
-
-  .menu-card {
-    padding: 1rem;
-  }
-
-  .menu-card h3 {
-    margin-bottom: 0.7rem;
-  }
-
-  .menu-card a {
-    display: block;
-    color: white;
-  }
-  .footer-menu {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 10rem;
-  }
-  .single-item {
-    width: 50%;
-  }
-
-  .deals-item .single-item {
-    width: 100% !important;
-  }
-
-  .card-brand {
-    display: block;
-  }
-
-  .single-card {
-    margin-bottom: 1.5rem;
-  }
+#menu-change:checked ~ .main-menu:before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 500;
+  background: rgba(0, 0, 0, 0.6);
 }
+
+#menu-change:checked ~ .main-menu .menu-responsive {
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 600;
+}
+
+#menu-change:checked ~ .main-menu .menu-responsive label {
+  display: block;
+}
+
+/* .menu-responsive {
+} */
 
 @media only screen and (max-width: 540px) {
-  footer {
-    padding: 3rem;
-    display: grid;
-    grid-template-columns: 22% 78%;
-    grid-gap: 2rem;
-    color: white;
-    background: rgb(61, 59, 59);
-  }
+}
 
-  .footer-2 {
-    background: black;
-    padding: 0.4rem;
-    font-size: 8px;
-    display: block;
-  }
+/* javascript error message */
 
-  .footer-menu {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 10rem;
-  }
-
-  .brand h1,
-  p {
-    text-align: center;
-  }
-
-  .menu-card-social-media {
-    padding: 1rem;
-    padding-left: 40px;
-  }
-
-  .menu-card-social-media h3 {
-    margin-bottom: 0.7rem;
-  }
-
-  .menu-card-social-media a {
-    display: block;
-    color: white;
-    align-items: flex-end;
-  }
-
-  .menu-card {
-    padding: 1rem;
-  }
-
-  .menu-card h3 {
-    margin-bottom: 0.7rem;
-  }
-
-  .menu-card a {
-    display: block;
-    color: white;
-  }
-  .footer-menu {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 10rem;
-  }
-  .single-item {
-    width: 100%;
-  }
-
-  /* position outside */
-  .home .flickity-prev-next-button.previous {
-    left: 40px;
-  }
-
-  .home .flickity-prev-next-button.next {
-    right: 40px;
-  }
+.error {
+  background: orangered;
+  color: #fff;
+  padding: 5px;
+  margin: 5px;
 }
