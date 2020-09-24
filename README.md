@@ -1,9 +1,9 @@
-# EDU - Online Shopping
+# Ottawa Store - Online Shopping
 Ottawa Team Project
 
 ## Project Overview
 
-EDU-Online shopping is an online platform where people can buy and
+Ottawa Stores is an online platform where people can buy and
 sell different items and goods.
 
 
