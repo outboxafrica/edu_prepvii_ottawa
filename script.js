@@ -14,12 +14,12 @@ function validation() {
     error_message.innerHTML = text;
     return false;
   }
-  if (isNaN(number) || number.length != 10 || number == "" || number == null) {
+  if (isNaN(number) || number.length != 10 || number.length == "" || number.length == null) {
     text = "Please Enter valid Phone number";
     error_message.innerHTML = text;
     return false;
   }
-  if (password <= 8 || password == "" || password == null) {
+  if (password.length || password.length == "" || password.length == null) {
     text = "Password must be 8 characters or more";
     error_message.innerHTML = text;
     return false;
