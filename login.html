@@ -7,53 +7,41 @@
     <title>Document</title>
 </head>
 <body>
-    <section class="login-page">
-      <form action="">
-        <div class="box">
-            <div class="form-head">
-                  <h1>Login now</h1>
+  <header>
+    <h2>
+      <span class="brand-logo">Ottawa store</span>
+      <!-- <label for="menu-change"><span class="ti-menu"></span></label> -->
+    </h2>
+    <input type="checkbox" id="menu-change" />
+    <div class="main-menu">
+      <div class="menu-responsive">
+        <label for="menu-change">Close</label>
+      </div>
+      <!-- <a href="" class="">cart</a> -->
+      <a href="contact.html" class="contact">Contact</a>
+      <a href="login.html">login</a>
+     
+    </div>
+  </header>
+    
+        
+        <div class="sign-up-box">
+          <h1 class="sign-up-name">Login now</h1>
+          <div id="error_message"></div>
+          <form id="my-form" onsubmit="return validation()" novalidate action="home.html">
+            <input type="email" name="email" placeholder="Email" id="email" />
+            <input type="password" name="password" placeholder="Password" id="password" />
+            <div class="submit-btn">
+              <input type="submit" name="" value="Login" class="submit" onclick="validation()" />
             </div>
-            <div class="form-body">
-                  <input id="useremail" type="email" placeholder="Enter email">
-                  <input id="password" type="password" placeholder="Enter password">
-            </div>
-            <div class="forgot">
-                <a class="" href="#"><i>Forgot password</i></a>
-            </div>
-            <div class="form-footer">
-                 <button type="submit" onclick="getInfo()">login</button><br>
-            </div>
-            <div class="create">
-                <a class="" href="index.html"><i>Create an account</i></a>
-            </div>
+            <div class="login-link"><p>Create an account</p><a href="index.html">Sign up</a></div>
+          </form>
         </div>
   
-        <section class="last">
-            <footer>
-                <div class="footer-menu">
-                  <div class="menu-card">
-                    <a href="home.html">Home</a>
-                    <a href="">About</a>
-                    <a href="contact.html">Contact</a>
-                  </div>
-                  <div class="menu-card-social-media">
-                    <a href="">Twitter</a>
-                    <a href="">Facebook</a>
-                    <a href="">Instagram</a>
-                  </div>
-                </div>
-              </footer>
-              <footer class="footer-2">
-                <div class="brand">
-                  <p>copyright ottawa-oubox 2020</p>
-                </div>
-              </footer>
-        </section>  
        
-    </form>
-</section>
+       
+    
 
-              <!-- end of footer section -->
           
 
             
