@@ -34,10 +34,8 @@
       </div>
     </header>
     
-</head>
 
 
-<body>
 
         
    <div class="container">
@@ -159,7 +157,23 @@
   </footer>
   <!-- end of footer section -->
 </div>
- 
+ <!-- JavaScript -->
+ <script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script type="text/javascript">
+var btn = document.getElementById('btn'); 
+var spn = document.getElementsByClassName('c');
+let count=0;
+function cot() {
+    count +=1;
+    document.getElementsByClassName('c').innerHTML=count;
+    console.log(count);
+}
+
+</script>
 </body>
 
  <!-- JavaScript -->
