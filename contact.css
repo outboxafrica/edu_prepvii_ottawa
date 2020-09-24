@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zilla+Slab+Highlight:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&family=Zilla+Slab+Highlight:wght@700&display=swap");
+
+* {
+  font-family: "Raleway", sans-serif;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #e5dad0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  align-items: center;
+  padding: 0rem 3.5rem;
+  color: #6a6b6d;
+}
+
+header h2 {
+  font-size: 1.8rem;
+}
+
+.brand-logo {
+  font-family: "Zilla Slab Highlight", cursive;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+
+header h2 span {
+  margin-left: 1rem;
+}
+
+header h2 {
+  width: 30%;
+}
+
+#menu-change {
+  display: none;
+}
+
+.wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  max-width: 450px;
+  width: 200%;
+}
+
+.wrapper h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: black;
+}
+
+.wrapper .input_field {
+  margin-bottom: 10px;
+}
+
+.wrapper .input_field input[type="email"],
+input[type="tel"],
+.wrapper textarea {
+  width: 100%;
+  border: transparent;
+  padding: 20px;
+  border-radius: 4px;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.wrapper textarea {
+  height: 250px;
+  resize: none;
+}
+
+.wrapper .submit-btn input[type="submit"] {
+  border: none;
+  outline: none;
+  background: rgb(255, 122, 74);
+  color: white;
+  font-size: 20px;
+  border-radius: 7px;
+  height: 40px;
+  font-weight: 200px;
+  padding: 10px;
+  letter-spacing: 1px;
+}
+
+.submit-btn {
+  padding: 0px 50px;
+  margin-left: 300px;
+}
+
+.wrapper input[type="submit"]:hover {
+  cursor: pointer;
+  background: rgb(240, 79, 21);
+}
+
+.main-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  padding-bottom: 20px;
+  position: absolute;
+}
+
+.main-menu .contact {
+  margin-right: 20px;
+}
+
+.main-menu a:hover {
+  background-color: rgb(255, 122, 74);
+  padding: 0.5rem;
+  border-radius: 2px;
+  color: white;
+}
+
+.menu-responsive {
+  display: inline-block;
+  width: 70%;
+}
+
+.menu-responsive label {
+  display: none;
+  text-align: right;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+header a {
+  color: #6a6b6d;
+  font-weight: 600;
+}
+
+/* sign up form */
+
+/* .contact-box {
+  width: 360px;
+  height: 420px;
+  color: #000;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 50px 50px;
+  border-radius: 10px;
+  border: transparent;
+} */
+
+h1 {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 22px;
+}
+
+.brand-name {
+  margin-bottom: 30px;
+}
+
+#error_message {
+  margin-bottom: 10px;
+  padding: px;
+  background: rgb(255, 122, 74);
+  text-align: center;
+  font-size: 14px;
+  transition: all 0.5s ease;
+  color: #fff;
+  width: 100%;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 1180px) {
+  .menu-responsive {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .brand-logo {
+    display: none;
+  }
+  .ti-menu {
+    display: none;
+  }
+}
+
+#menu-change:checked ~ .main-menu:before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 500;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+#menu-change:checked ~ .main-menu .menu-responsive {
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 600;
+}
+
+#menu-change:checked ~ .main-menu .menu-responsive label {
+  display: block;
+}
+
+/* .menu-responsive {
+} */
+
+@media only screen and (max-width: 540px) {
+}
+
+/* javascript error message */
+
+.error {
+  background: orangered;
+  color: #fff;
+  padding: 5px;
+  margin: 5px;
+}

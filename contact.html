@@ -10,7 +10,7 @@
     />
     <!-- CSS -->
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="contact.css" />
   </head>
   <body>
     <!-- nav-bar section -->
@@ -25,35 +25,35 @@
           <label for="menu-change">Close</label>
         </div>
         <!-- <a href="" class="">cart</a> -->
-        <a href="contact.html" class="contact">Contact us</a>
-        <a href="login.html">login</a>
+        <a href="home.html" class="contact">Home</a>
+        <a href="login.html">logout</a>
+        <link rel="stylesheet" href="contact.css" />
       </div>
     </header>
     <!-- end of nav-bar section -->
-    <!-- sign up form -->
-    <div class="sign-up-box">
-      <h1 class="sign-up-name">Sign up</h1>
+    <!-- contact section -->
+    <div class="wrapper">
+      <h2>Contact us</h2>
       <div id="error_message"></div>
-      <form id="my-form" onsubmit="return validation()" novalidate action="home.html">
-        <input type="email" name="email" placeholder="Email" id="email" />
-        <input type="number" name="number" placeholder="Phone number" id="number" />
-        <input type="password" name="password" placeholder="Password" id="password" />
-        <input
-          type="password"
-          name="confirm password"
-          placeholder="Confirm Password"
-          id="confirm-password"
-        />
-        <div class="submit-btn">
-          <input type="submit" name="" value="Register" class="submit" onclick="validation()" />
+      <form action="" id="myform" onsubmit="return validation()">
+        <div class="input_field">
+          <input type="email" placeholder="Email" id="email" />
         </div>
-        <div class="login-link"><p>Already have account?</p><a href="login.html">Login</a></div>
+        <div class="input_field">
+          <input type="tel" placeholder="Phone number" id="number" />
+        </div>
+        <div class="input_field">
+          <textarea id="text-area" placeholder="Message"></textarea>
+        </div>
+        <div class="submit-btn">
+          <input type="submit" />
+        </div>
       </form>
     </div>
-    <!-- end of sign up form -->
+    <!-- end of contact section -->
     <!-- JavaScript -->
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/easytimer@1.1.1/src/easytimer.min.js"></script>
-    <script src="./script.js"></script>
+    <script src="./contact.js"></script>
   </body>
 </html>
