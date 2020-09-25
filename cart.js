@@ -1,57 +1,63 @@
-document.addEventListener("DOMContentLoaded", Total);
+document.addEventListener("DOMContentLoaded", function(){
+  
+  Total();
+    
+});
+    
+let roo = [...document.querySelectorAll(".pdt_row")]; // product info row
 
-    let qtys = [...document.querySelectorAll(".qty")]; //quantity
+  let qtys = [...document.querySelectorAll(".qty")]; //quantity
 
-    let prices = [...document.querySelectorAll(".price")]; //prices
+  let prices = [...document.querySelectorAll(".Price")]; //prices
 
-    let roo = [...document.querySelectorAll(".pdt_row")]; // product info row
+let  amt = [...document.querySelectorAll(".amount")]; //amount of a product
 
-    // calculations
-    let div_len = roo.length;
+   // calculations
+   let div_len = roo.length;
 
-    // minus = function () {
-    //   let count = 0;
-    //   for (let it = 0; it < div_len; it++) {
-    //     let qty1 = parseInt(qtys[it].innerHTML);
-    //     let prices1 = parseInt(prices[it].innerHTML);
-    //     let amt1 = parseInt(amt[it].innerHTML);
-    //     let tot = parseInt(total.innerHTML);
-    //   if (true) {
-    //     count++;
-    //     qty1 -= count;
-    //     amt1 = qty1 * prices1;
-    //   }
-    //   qtys[it].textContent = qty1;
-    //   amt[it].textContent = amt1;
-    //   tot +=amt1;
-    //   total.textContent = tot;
-    // }
-    // };
+    minus = function () {
+      let count = 0;
+      for (let it = 0; it < div_len; it++) {
+        let qty1 = parseInt(qtys[it].innerHTML);
+        let prices1 = parseInt(prices[it].innerHTML);
+        let amt1 = parseInt(amt[it].innerHTML);
+        let tot = parseInt(total.innerHTML);
+      if (true) {
+        count++;
+        qty1 -= count;
+        amt1 = qty1 * prices1;
+      }
+      qtys[it].textContent = qty1;
+      amt[it].textContent = amt1;
+     
+      total.textContent = Total();
+    }
+    };
 
-//     plus = function () {
-//       let count = 0;
-//       for (let it = 0; it < div_len; it++) {
-//         let qty1 = parseInt(qtys[it].innerHTML);
-//         let prices1 = parseInt(prices[it].innerHTML);
-//         let amt1 = parseInt(amt[it].innerHTML);
-//         let tot = parseInt(total.innerHTML);
-//       if (true) {
-//         count++;
-//         qty1 += count;
-//         amt1 = qty1 * prices1;
-//       }
-//       qtys[it].textContent = qty1;
-//       amt[it].textContent = amt1;
-//       tot +=amt1; 
-//       total.textContent = tot;
-//     }
-// };
+    plus = function () {
+      let count = 0;
+      for (let it = 0; it < div_len; it++) {
+        let qty1 = parseInt(qtys[it].innerHTML);
+        let prices1 = parseInt(prices[it].innerHTML);
+        let amt1 = parseInt(amt[it].innerHTML);
+        let tot = parseInt(total.innerHTML);
+      if (true) {
+        count++;
+        qty1 += count;
+        amt1 = qty1 * prices1;
+      }
+      qtys[it].textContent = qty1;
+      amt[it].textContent = amt1;
+     
+      total.textContent = Total();
+    }
+};
 
-// });
 
-let pdts = [...document.querySelectorAll(".pdt_row")];
+    let pdts = [...document.querySelectorAll(".pdt_row")];
+
     let total = document.querySelector("#ttot"); // total
-
+   
 function Total(amt) {
    amt = [...document.querySelectorAll(".amount")]; //amount of a product
 
@@ -76,6 +82,7 @@ function Total(amt) {
     
     var row = btn.parentNode.parentNode;
     row.parentNode.removeChild(row);
+
     pdts = [...document.querySelectorAll(".pdt_row")];
     amt = [...document.querySelectorAll(".amount")]
 
