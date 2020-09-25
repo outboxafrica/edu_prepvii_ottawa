@@ -10,17 +10,17 @@
     <link rel="stylesheet" href="home.css" />
   </head>
   <body>
-    <header>
+    <header id="head">
       <h2>
         <a href="home.html">
-        <span class="brand-logo">Ottawa store</span></a>
+        <span class="brand-logo">Ottawa Stores</span></a>
         <label for="menu-change"><span class="ti-menu"></span></label>
       </h2>
       <input type="checkbox" id="menu-change" />
-      <div class="main-menu">
-        <div class="menu-responsive">
-          <label for="menu-change">Close</label>
-          <form action="" class="search">
+      <div class="main-menu" id="main-menu">
+        <div class="menu-responsiv">
+          <!-- <label for="menu-change">Close</label> -->
+          <form class="searc">
             <input type="search" placeholder="search store..." />
             <button><span class="span ti-search"></span></button>
           </form>
@@ -75,8 +75,8 @@
               onclick="plus(this)"
             />
           </td>
-          <td>UGX<span class="Price"> 250000</span></td>
-          <td>UGX <span class="amount">250000</span></td>
+          <td>UGX<span class="Price"> 280000</span></td>
+          <td>UGX <span class="amount">280000</span></td>
         </tr>
         <!--  another row with product details -->
         <tr class="pdt_row">
@@ -129,7 +129,7 @@
           </td>
         </tr>
       </table>
-    </div>
+    
 
     <!-- footer section -->
     <footer>
@@ -151,6 +151,7 @@
         <p>copyright ottawa-oubox 2020</p>
       </div>
     </footer>
+    </div>
     <!-- end of footer section -->
     <script src="cart.js"></script>
   </body>
