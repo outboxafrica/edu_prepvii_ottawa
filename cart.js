@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", function(){
   
-  Total();
-    
+  Total(); 
 });
     
 let roo = [...document.querySelectorAll(".pdt_row")]; // product info row
