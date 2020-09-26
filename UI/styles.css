@@ -1,7 +1,7 @@
 *{
     box-sizing: border-box;
     margin: 0;
-
+    font-family: "Raleway", sans-serif;
 }
 
 
@@ -32,14 +32,20 @@ body{
 .navbar{
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content:space-between;
     flex-wrap: wrap;
     
+}
+.navbar_button{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 h1{
   font-weight: normal; 
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin-top: 0.7rem;
+  margin-left: 1%;
   background-color: #6a6b6d;
   color: white;
 }
@@ -52,40 +58,15 @@ h1{
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
     background-color: white;
 }
-.search{
-    border-radius: 20px;
-    height: 1.5rem;
-    padding-left: 1rem;
-    outline: none;
-    margin-left: 0;
-    padding-right: 0;
-    border-left: 0;
-    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
-    background-color: white;
-    
-} 
-.search::placeholder{
-    font: italic;
-    font-size: 0.7rem;
-}
-.search_button{
-    border-radius: 20px;
-    border-style: none;
-    margin-left: 0;
-    height: 1.5rem;
-    color: white;
-    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
-    background-color: black;
-}
+
 .cart_button{
-    border-radius: 10px;
-    height: 2rem;
-    padding-top: 0.4rem;
+    border-radius: 2px;
+    height: 2%;
+    padding-top: 0.2rem;
     padding-right: 0.2rem;
     padding-left: 0.2rem;
     outline: none;
-    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color:  #E5DAD0;
     color: white;
 }
 .cart_image{
@@ -93,13 +74,13 @@ h1{
     height: 1rem;
 }
 .contact{
-    border-radius: 10px;
-    height: 2rem;
+    border-radius: 2px;
+    height: 2%;
     padding-top: 0.4rem;
     padding-right: 0.2rem;
     padding-left: 0.2rem;
-    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
-    background-color: rgba(255, 255, 255, 0.3); 
+    margin-right: 1rem;
+    background-color:  #E5DAD0;
     color: white;
 }
 a:link{
@@ -128,34 +109,48 @@ h2{
     margin:10px;
     height: 100%;
 }
+#tab{
+    width: 90%;
+    border-radius: 5px;
+    background-color: white;
+    
+}
+.rem_but {
+  padding: 10px;
+  margin: 5px;
+  border: none;
+  border-radius: 10px;
+  background-color: #6a6b6d;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0px 2px 2px 0px rgb(192, 190, 190);
+}
 .info_part{
-    border-radius: 20px;
-    width:60%;
-    height: 12rem;
+    border-radius: 5px;
+    width:90%;
+    height: 20%;
     padding-left: 10px;
     margin: 10px;
     background-color:white;   
 } 
 .edit_info{
-    border-radius: 10px;
+    border-radius: 2px;
     border-style: none;
-height: 2rem;
-width: 8rem;
-margin-left:50%;
-margin-top: 8%;
-margin-bottom: 4rem;
+height: 1.5%;
+margin: 2px 3px 3px 1px;
 outline: none;
-
-    background-color: #6a6b6d;
-    color:white;
+position: relative;
+float: right;
+background-color: #6a6b6d;
+color:white;
 }
 .info_text{
-    padding-left: 30%;
-    padding-right: 30%;
+   position: inherit;
 }
 input{
     border: none;
     outline: none;
+    width:60%;
     background-color: #f3f3f3;
 }
 .delivery{
@@ -176,9 +171,9 @@ input{
     margin-bottom: 1rem;
 }
 .product{
-    border-radius: 20px;
-    width:60%;
-    height: 12rem;
+    border-radius: 5px;
+    width:90%;
+    height: 12%;
     column-count: 3;
     padding: 10px 10px 10px 10px;
     background-color:white; 

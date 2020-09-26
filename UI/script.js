@@ -49,4 +49,22 @@ function myFunc(){
 };
 
 
-})
+});
+ /* cart figures */
+ var pdts = [...document.querySelectorAll(".pdt_row")];
+ let can = document.querySelector("#cart_num");
+
+ can.textContent = pdts.length; 
+
+/* Remove an item from the cart */
+function remov(btn) {
+ var row = btn.parentNode.parentNode;
+ row.parentNode.removeChild(row);
+ 
+ pdts = [...document.querySelectorAll(".pdt_row")];
+ let rowCount = pdts.length;
+ can.textContent = pdts.length;
+ if (rowCount == 0) {
+     window.location = "home.html";
+   }
+     }  
