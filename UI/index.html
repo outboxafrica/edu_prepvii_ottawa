@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CHECK OUT</title>
+<link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+      <!--navbar-->
+     <div class="navbar">
+         <h1 class="navbar_text">OTTAWA STORES</h1>
+        <!-- <div class="user">User</div>-->
+        <div class="navbar_button">
+            <a href="../cart.html" target="_blank">
+                <p class="cart_button" id="cart_num">
+                    <img src="images/cart.png" alt="Oops!" class="cart_image">
+                   
+                    Cart
+                </p>
+             </a>
+            <a href="#footer" target="_blank">
+                <p class="contact">
+                    Contact Us
+                </p>
+            </a>
+        </div>
+         
+        <!--product information-->
+     </div>
+     <div class="wrapper">
+         <div class="info_part">
+             <h2 class="info_text">
+                 Adress Information
+             </h2>
+             <form class="input">
+                  <label for="">Name   :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" class="name" name="name" id="name" required></label><br>
+                  <label for="">Location: <input type="text" class="location" name="location"id="ilocation" required></label><br>
+                  <label for="">Phone No:<input type="tel" class="phone_no" name="phone-no" id="phone-no" required></label><br>
+                  <label for="">Email   :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="email" class="email" name="email" id="email" required></label><br>
+                 <button class="edit_info" type="button" onclick="myFunc()">Edit Information</button>
+             </form>
+            
+         </div>
+        
+ 
+            
+                <table id="tab">
+                    <thead>
+                            <tr>
+                                    <td>Product</td>
+                                    <td>Product-Info</td>
+                                    <td>Quantity</td>
+                                    <td>Price</td>
+                                    <td>Amount</td>
+                                  </tr>
+                    </thead>
+                  
+                  <!-- row with product details -->
+                 <tbody>
+                        <tr class="pdt_row">
+                                <td>
+                                  <img
+                                    src="images/camera.jpg"
+                                    alt="product_img"
+                                    width="100px"
+                                    class="pdt_img"
+                                  />
+                                  <button class="rem_but" name="rem_but" onclick="remov(this)">
+                                    REMOVE
+                                  </button>
+                                </td>
+                                <td>
+                                  <p>Camera L7840</p>
+                                  <p>Black</p>
+                                </td>
+                                <td>
+                                  <input
+                                    type="image"
+                                    src="images/minus.png"
+                                    width="15px"
+                                    class="minus"
+                                    onclick="minus(this)"
+                                  />
+                                  <span class="qty">1</span>
+                                  <input
+                                    type="image"
+                                    src="images/plus.png"
+                                    alt=""
+                                    width="15px"
+                                    class="plus"
+                                    onclick="plus(this)"
+                                  />
+                                </td>
+                                <td>UGX<span class="Price"> 250000</span></td>
+                                <td>UGX <span class="amount">250000</span></td>
+                              </tr>
+                 </tbody>
+                  <!--  another row with product details -->
+                  
+                </table>
+                <div class="product"> 
+         </div>
+
+         <div class="delivery">
+            <h2 class="delivery_text">Delivery Method</h2>
+            <form>
+              
+   <input type="radio" id="location" name="location" value="pick-up-location">
+   <label for="pick-up-location">Pick up location</label><br>
+   <input type="radio" id="deliver" name="location" value="deliver">
+   <label for="deliver">Deliver at particular location</label><br>
+  
+
+            </form>
+
+        </div>
+         <div class="payment_section">
+             <h2 class="payment_text">Payment Method</h2>
+<form id="confirm">
+
+    <input type="radio" id="COD" name="payment" value="Cash-on-delivery">
+    <label for="Cash-on-delivery">Cash on delivery</label><br>
+    <input type="radio" id="Mobile-money" name="payment" value="Mobile-money">
+    <label for="Mobile-money">Mobile money</label><br>
+   <!-- <button type="submit" class="confirm_button" onclick="myFunc()">Confirm</button>-->
+   
+<input type="submit" value="Confirm" class="confirm_button" target="_blank" onclick="showAlert()">
+  
+
+</form>
+         </div>
+     </div>
+     
+     <footer id="footer">
+         <div class="footer">
+                   <ul>
+                        <li>Home</li>
+                        <li>About Us</li>
+                        <li>Contact Us</li>
+                    </ul>
+                    <div class="menu-card-social-media">
+                            <a href="">Twitter</a>
+                            <a href="">Facebook</a>
+                            <a href="">Instagram</a>
+                          </div>
+         </div>
+         <div class="copyright">
+             <p class="copyright_text">copyright ottawa-oubox 2020</p>
+             
+         </div>
+        
+     </footer>
+     <script src="script.js"></script>
+
+  </body>
+  </html>

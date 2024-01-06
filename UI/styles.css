@@ -1,0 +1,255 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+}
+
+
+  
+  /* For mobile phones: 
+  [class*="col-"] {
+    width: 100%;
+  }
+  @media only screen and (min-width: 768px) {
+    For desktop: 
+    .navbar {width: 8.33%;}
+    .wrapper {width: 16.66%;}
+    .delivery {width: 25%;}
+    .product {width: 33.33%;}
+    .payment_section {width: 41.66%;}
+    .footer {width: 50%;}
+    .copyright {width: 58.33%;}
+    background-color: green;
+    
+  }
+  @media only screen and (min-width:400px) {
+   background-color: green;
+}*/
+
+body{
+    background-color:  #E5DAD0;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    
+}
+.navbar_button{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+h1{
+  font-weight: normal; 
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 0.7rem;
+  margin-left: 1%;
+  background-color: #6a6b6d;
+  color: white;
+}
+.user{
+    border-radius: 20px;
+    height: 1.5rem;
+    width: 3rem;
+    padding-left: 0.4rem;
+    padding-top: 0.1rem;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+    background-color: white;
+}
+
+.cart_button{
+    border-radius: 2px;
+    height: 2%;
+    padding-top: 0.2rem;
+    padding-right: 0.2rem;
+    padding-left: 0.2rem;
+    outline: none;
+    background-color:  #E5DAD0;
+    color: white;
+}
+.cart_image{
+    width: 1.5rem;
+    height: 1rem;
+}
+.contact{
+    border-radius: 2px;
+    height: 2%;
+    padding-top: 0.4rem;
+    padding-right: 0.2rem;
+    padding-left: 0.2rem;
+    margin-right: 1rem;
+    background-color:  #E5DAD0;
+    color: white;
+}
+a:link{
+    text-decoration: none;
+}
+button:hover{
+    background-color:#FFA361;
+} 
+.cart_button:hover{
+    background-color: #FFA361;
+} 
+.contact:hover{
+    background-color: #FFA361;
+}     
+h2{
+    font-weight: bold;
+    font-size: 1rem;
+    
+
+}
+.wrapper{
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-grow: grow;
+    margin:10px;
+    height: 100%;
+}
+#tab{
+    width: 90%;
+    border-radius: 5px;
+    background-color: white;
+    
+}
+.rem_but {
+  padding: 10px;
+  margin: 5px;
+  border: none;
+  border-radius: 10px;
+  background-color: #6a6b6d;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0px 2px 2px 0px rgb(192, 190, 190);
+}
+.info_part{
+    border-radius: 5px;
+    width:90%;
+    height: 20%;
+    padding-left: 10px;
+    margin: 10px;
+    background-color:white;   
+} 
+.edit_info{
+    border-radius: 2px;
+    border-style: none;
+height: 1.5%;
+margin: 2px 3px 3px 1px;
+outline: none;
+position: relative;
+float: right;
+background-color: #6a6b6d;
+color:white;
+}
+.info_text{
+   position: inherit;
+}
+input{
+    border: none;
+    outline: none;
+    width:60%;
+    background-color: #f3f3f3;
+}
+.delivery{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    width: 30%;
+    height: 12%;
+    padding: 10px;
+    margin-top: 2%;
+    background-color:white;  
+}
+.delivery_text{
+    margin-bottom: 2rem;
+}
+#location{
+    margin-bottom: 1rem;
+}
+.product{
+    border-radius: 5px;
+    width:90%;
+    height: 12%;
+    column-count: 3;
+    padding: 10px 10px 10px 10px;
+    background-color:white; 
+}
+.description{
+    margin-top: 2rem;
+}
+.amount{
+    margin-top: 2rem;
+}
+.product_image{
+   /* height: 7rem;*/
+    width: 8rem;
+    border-radius: 20px;
+}
+.payment_section{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    width:30%;
+    height: 12%;
+    margin-top: 2%;
+    background-color:white; 
+}
+.payment_text{
+    margin-bottom: 1rem;
+}
+#COD{
+    margin-bottom: 2rem;
+}
+#Mobile-money{
+    margin-bottom: 2rem;   
+}
+.confirm_button{
+    border-radius: 10px;
+    border-style: none;
+    height: 2rem;
+    background-color:  #6a6b6d;
+}
+.confirm_button:hover{
+    background-color: #FFA361; 
+}
+footer{
+    background-color: rgb(34, 33, 33);
+}
+.footer{
+display: flex;
+align-items: center;
+justify-content: space-between;
+position: sticky;
+
+}
+.footer > ul{
+    list-style-type: none;
+    margin-left:1rem;
+    padding-left: 1%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: white;
+}
+.copyright{
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+   background-color: black; 
+}
+.copyright_text{
+    font: 0.5rem;
+    color: white;
+}
+.menu-card-social-media a {
+    display: block;
+    align-items: flex-end;
+    margin-right: 1rem;
+    color: white;
+   
+  }
